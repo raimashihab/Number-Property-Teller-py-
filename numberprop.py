@@ -86,31 +86,34 @@ print("""1. Check whether the number is even or odd
 7. Find the no. of digits in the number
 8. All properties""")
 
-ch=int(input("Enter your choice:"))
-if ch==1:
-    oddeven(num)
-elif ch==2:
-    prime(num)
-elif ch==3:
-    palindrome(num)
-elif ch==4:
-    factors(num)
-elif ch==5:
-    sumn(num)
-elif ch==6:
-    fibonacci(num)
-elif ch==7:
-    digits(num)
-elif ch==8:
-    oddeven(num)
-    prime(num)
-    palindrome(num)
-    factors(num)
-    sumn(num)
-    fibonacci(num)
-    digits(num)
-else:
-    print("Invalid choice!")
+ans='y'
+while ans=='y':
+    ch=int(input("Enter your choice:"))
+    if ch==1:
+        oddeven(num)
+    elif ch==2:
+        prime(num)
+    elif ch==3:
+        palindrome(num)
+    elif ch==4:
+        factors(num)
+    elif ch==5:
+        sumn(num)
+    elif ch==6:
+        fibonacci(num)
+    elif ch==7:
+        digits(num)
+    elif ch==8:
+        oddeven(num)
+        prime(num)
+        palindrome(num)
+        factors(num)
+        sumn(num)
+        fibonacci(num)
+        digits(num)
+    else:
+        print("Invalid choice!")
+    ans=input("Do you want to go again?y/n: ")
     
     
 
